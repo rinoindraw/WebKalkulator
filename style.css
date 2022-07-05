@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ body {
+    font-family: sans-serif;
+    background-color: #38A3A5;
+ }
+
+ .navbar .container h1{
+     font-size: 3em;
+     font-family: 'The Nautigal', cursive;
+ }
+
+ .navbar .container{
+    display: flex;
+    background-image: url('Img/1.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 8px;
+    color: #ffff;
+ }
+
+ .title{
+    margin-left: auto;
+ }
+
+ .flex-container-column {
+    display: flex;
+    /* properti pendukung */
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: right;
+ }
+
+ .flex-container-row {
+    display: flex;
+ }
+
+ .button {
+    flex-basis: 25%;
+    /* properti pendukung */
+    color: #1A1A40;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 30px;
+    border: 1px solid #C2FFF9;
+    background: -webkit-linear-gradient(top, #34B3F1, #ABC9FF);
+    cursor: pointer;
+}
+
+.double {
+    flex-basis: 50%;
+}
+
+.display {
+    color: white;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #085E7D;
+    border: 1px solid #C2FFF9;
+    font-size: 2em;
+}
+
+.operator,
+.negative,
+.equals {
+    background: -webkit-linear-gradient(top, #EB5353, #FF6B6B);
+ }
+
+ .card {
+    background-color: #3AB0FF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 20px;
+ }
+
+ .button:hover {
+    font-weight: bold;
+ }
+
+ .history {
+    width: 80%;
+    margin: 30px auto 30px auto;
+    overflow: hidden;
+ }
+
+ .history h2{
+    color: white;
+ }
+
+ table {
+    background-color: #ABC9FF;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+ }
+
+ th,
+ td {
+    text-align: center;
+    padding: 16px;
+ }
+
+ th {
+    background: -webkit-linear-gradient(top, #34B3F1, #ABC9FF);
+    color: white;
+ }
+
+ tr:nth-child(even) {
+    background-color: #9AD0EC;
+ }
+
+ footer{
+    width: 1200px;
+    margin: 0 auto;
+ }
+
+ footer .container{
+    font-family: 'The Nautigal', cursive;
+    font-size: 2em;
+    color: white;
+ }
+ 
+ @media screen and (max-width: 513px) {
+    .navbar .container h1{
+        font-size: 2em;
+    }
+  .button {
+        padding: 10px;
+  }
+  .history {
+        width: 100%;
+  }
+  footer{
+    width: 100%;
+  }
+  footer .container{
+    font-size: 1em;
+  }
+ }
